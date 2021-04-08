@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cweb-filtro:war">
+    <output-path>$PROJECT_DIR$/cweb-filtro/target</output-path>
+    <root id="archive" name="cweb-filtro.war">
+      <element id="artifact" artifact-name="cweb-filtro:war exploded" />
+    </root>
+  </artifact>
+</component>

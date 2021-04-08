@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Chat con WebSocket</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>
+</head>
+<body>
+
+<script lang="javascript">
+
+    var websocket;
+
+    function connect(nick, sala) {
+        if(sala==undefined) {
+            websocket = new WebSocket("ws://localhost:8080/cweb-chat/ChatWS");
+        } else {
+            websocket = new WebSocket("ws://localhost:8080/cweb-chat/ChatWS/" + sala + "?nick=" + nick);
+        }
+
+        websocket.onmessage = onMessage;
+        websocket.onopen = onOpen;
+    }
+
+    function onOpen(event) {
+        document.getElementById("chat").style.display = 'block';
+        document.getElementById("login").style.display = 'none';
+    }
+
+    function onMessage(event) {
+        items = event.data.split(";");
+        document.getElementById("mensajes").innerHTML = "<p><strong>&lt;" + items[0] + "&gt;</strong> " + items[1] + "</p>" + document.getElementById("mensajes").innerHTML;
+    }
+
+    function send(texto) {
+        websocket.send(texto);
+    }
+
+    // Eliminar esta linea para implementar nick y sala
+    //window.addEventListener("load", connect, false);
+
+</script>
+
+
+<div id="login">
+    <div align="center">
+        <form onsubmit="connect(this.nick.value, this.sala.value); return false">
+            <label for="input_nick">Nickname</label> <input type="text" name="nick" id="input_nick"/><br/>
+            <label for="input_sala">Sala</label> <input type="text" name="sala" id="input_sala"/><br/>
+            <input type="submit" value="Enviar"/>
+        </form>
+    </div>
+</div>
+
+<div id="chat" style="display: none;">
+    <div align="center">
+        <form onsubmit="send(this.texto.value); this.texto.value=''; return false">
+            <input type="text" name="texto"/>
+            <input type="submit" value="Enviar"/>
+        </form>
+    </div>
+
+    <table class="marco" align="center">
+        <tr class="titulo">
+            <th>
+                Chat con WebSocket
+            </th>
+        </tr>
+
+        <tbody>
+        <tr class="marco">
+            <td class="marco" id="mensajes">
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+
+</body>
+</html>

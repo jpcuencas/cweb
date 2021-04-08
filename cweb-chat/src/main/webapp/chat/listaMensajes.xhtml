@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Created by IntelliJ IDEA.
+  User: expertojava
+  Date: 27/10/15
+  Time: 12:26
+-->
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+<h:head>
+    <title>Chat con Facelets</title>
+    <h:outputStylesheet library="css" name="estilo.css"/>
+</h:head>
+
+<h:body>
+    <table class="marco" align="center">
+        <tr class="titulo">
+            <th>
+                Conectado al chat como ${sessionScope["org.expertojava.cweb.chat.nick"]}
+            </th>
+        </tr>
+
+        <tbody>
+        <tr class="marco">
+            <td class="marco" id="mensajes">
+
+                <c:if test="${empty cola.list}">
+                    <p>No hay mensajes publicados</p>
+                </c:if>
+
+                <c:forEach var="mensaje" items="${cola.list}">
+                    <p><strong>${mensaje.emisor}</strong> ${mensaje.texto}</p>
+                </c:forEach>
+
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</h:body>
+
+</html>

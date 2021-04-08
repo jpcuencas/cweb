@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cweb-contexto:war">
+    <output-path>$PROJECT_DIR$/cweb-contexto/target</output-path>
+    <root id="archive" name="cweb-contexto.war">
+      <element id="artifact" artifact-name="cweb-contexto:war exploded" />
+    </root>
+  </artifact>
+</component>

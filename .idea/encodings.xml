@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cweb-chat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cweb-contexto" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cweb-filtro" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cweb-hola" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cweb-peticiones" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cweb-ranking" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cweb-seguridad" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cweb-servlets" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cweb-sesiones" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cweb-wrapper" charset="UTF-8" />
+  </component>
+</project>

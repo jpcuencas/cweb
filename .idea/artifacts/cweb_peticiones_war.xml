@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cweb-peticiones:war">
+    <output-path>$PROJECT_DIR$/cweb-peticiones/target</output-path>
+    <root id="archive" name="cweb-peticiones.war">
+      <element id="artifact" artifact-name="cweb-peticiones:war exploded" />
+    </root>
+  </artifact>
+</component>

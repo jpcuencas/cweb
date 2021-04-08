@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cweb-chat/cweb-chat.iml" filepath="$PROJECT_DIR$/cweb-chat/cweb-chat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cweb-contexto/cweb-contexto.iml" filepath="$PROJECT_DIR$/cweb-contexto/cweb-contexto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cweb-filtro/cweb-filtro.iml" filepath="$PROJECT_DIR$/cweb-filtro/cweb-filtro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cweb-hola/cweb-hola.iml" filepath="$PROJECT_DIR$/cweb-hola/cweb-hola.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cweb-peticiones/cweb-peticiones.iml" filepath="$PROJECT_DIR$/cweb-peticiones/cweb-peticiones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cweb-ranking/cweb-ranking.iml" filepath="$PROJECT_DIR$/cweb-ranking/cweb-ranking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cweb-seguridad/cweb-seguridad.iml" filepath="$PROJECT_DIR$/cweb-seguridad/cweb-seguridad.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cweb-servlets/cweb-servlets.iml" filepath="$PROJECT_DIR$/cweb-servlets/cweb-servlets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cweb-sesiones/cweb-sesiones.iml" filepath="$PROJECT_DIR$/cweb-sesiones/cweb-sesiones.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cweb-wrapper/cweb-wrapper.iml" filepath="$PROJECT_DIR$/cweb-wrapper/cweb-wrapper.iml" />
+    </modules>
+  </component>
+</project>

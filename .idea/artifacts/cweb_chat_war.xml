@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cweb-chat:war">
+    <output-path>$PROJECT_DIR$/cweb-chat/target</output-path>
+    <root id="archive" name="cweb-chat.war">
+      <element id="artifact" artifact-name="cweb-chat:war exploded" />
+    </root>
+  </artifact>
+</component>

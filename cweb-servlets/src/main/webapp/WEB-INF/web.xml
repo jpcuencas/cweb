@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+
+    <servlet>
+        <servlet-name>ClaseServlet</servlet-name>
+        <servlet-class>org.expertojava.cweb.ejemplos.ClaseServlet</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ClaseServletHTML</servlet-name>
+        <servlet-class>org.expertojava.cweb.ejemplos.ClaseServletHTML</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ClaseServletInit</servlet-name>
+        <servlet-class>org.expertojava.cweb.ejemplos.ClaseServletInit</servlet-class>
+        <init-param>
+            <param-name>mensaje</param-name>
+            <param-value>Mensaje configurado en web.xml</param-value>
+        </init-param>
+        <init-param>
+            <param-name>contador</param-name>
+            <param-value>15</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet>
+        <servlet-name>FechaServlet</servlet-name>
+        <servlet-class>org.expertojava.cweb.ejercicios.FechaServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ParamIniServlet</servlet-name>
+        <servlet-class>org.expertojava.cweb.ejercicios.ParamIniServlet</servlet-class>
+        <init-param>
+            <param-name>param1</param-name>
+            <param-value>val1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>param2</param-name>
+            <param-value>val2</param-value>
+        </init-param>
+        <init-param>
+            <param-name>param3</param-name>
+            <param-value>val3</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServlet</servlet-name>
+        <url-pattern>/ClaseServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServletHTML</servlet-name>
+        <url-pattern>/ClaseServletHTML</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ClaseServletInit</servlet-name>
+        <url-pattern>/ClaseServletInit</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>FechaServlet</servlet-name>
+        <url-pattern>/FechaServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ParamIniServlet</servlet-name>
+        <url-pattern>/ParamIniServlet</url-pattern>
+    </servlet-mapping>
+
+</web-app>

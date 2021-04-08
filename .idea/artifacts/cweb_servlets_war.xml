@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cweb-servlets:war">
+    <output-path>$PROJECT_DIR$/cweb-servlets/target</output-path>
+    <root id="archive" name="cweb-servlets.war">
+      <element id="artifact" artifact-name="cweb-servlets:war exploded" />
+    </root>
+  </artifact>
+</component>
